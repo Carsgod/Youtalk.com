@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUTALK - Safe Space for Young People</title>
+
+    <!-- Favicon (SVG Data URI - Y in a burgundy speech bubble) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23800020'/%3E%3Ctext x='50' y='72' font-family='Arial, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#800020">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">YO<span class="highlight">U</span>TALK</span>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="nav-cta">Book a Session</a>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1920&h=1080&fit=crop');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                A Safe Space for<br>
+                <span class="highlight-text">Young People to Connect</span>
+            </h1>
+            <p class="hero-description">
+                Access professional Guidance and Mentorship from highly skilled experts across diverse technical and professional disciplines.
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="#contact" class="btn btn-outline">Get Started</a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-label">Young People Supported</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24">0</span><span style="font-size: 1rem;">hr</span>
+                    <span class="stat-label">Response Time</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="100">0</span><span style="font-size: 1rem;">%</span>
+                    <span class="stat-label">Confidential</span>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">Our Values</h2>
+                <p class="section-subtitle">
+                  YouTalk is a well-structured platform that brings together young people from diverse communities, equipping them with the skills to excel academically, grow professionally, and maintain positive mental well-being to thrive in the global space.
+
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up">
+                    <div class="card-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Professionalism</h3>
+                    <p>We uphold the highest standards of professional conduct, ethics, and expertise in all our interactions.</p>
+                </div>
+
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Inclusivity</h3>
+                    <p>Creating an environment where every young person feels welcome, respected, and valued regardless of background.</p>
+                </div>
+
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Diversity</h3>
+                    <p>Celebrating and embracing differences in culture, perspective, and experience to enrich our community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Core Sessions Designed for You</h2>
+                <p class="section-subtitle">
+                    Three specialised sessions addressing different aspects of personal and professional growth
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Teen Talk (First) -->
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-image">
+                        <img src="Images/Teen Talk 1.JPEG" alt="Teen Talk">
+                        <div class="service-overlay">
+                            <span class="service-tag">Teen Talk</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Teen Talk</h3>
+                        <p>Young people participate in interactive group sessions led by an educational psychologist or counsellor, where they are empowered on a wide range of topics</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Adolescent Rights</li>
+                            <li><i class="fas fa-check-circle"></i> Sexual and Reproductive Health and Rights (SRHR)</li>
+                            <li><i class="fas fa-check-circle"></i> Significance of Education</li>
+                            <li><i class="fas fa-check-circle"></i> Academic Challenges</li>
+                            <li><i class="fas fa-check-circle"></i> Journaling</li>
+                            <li><i class="fas fa-check-circle"></i> Peer Pressure</li>
+                            <li><i class="fas fa-check-circle"></i> Family Conflicts</li>
+                            <li><i class="fas fa-check-circle"></i> Health & Wellness</li>
+                            <li><i class="fas fa-check-circle"></i> Relationships</li>
+                            <li><i class="fas fa-check-circle"></i> Personal Development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Guidance & Counselling (Second) -->
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop" alt="Guidance & Counselling">
+                        <div class="service-overlay">
+                            <span class="service-tag">Guidance & Counselling</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Guidance & Counselling (G&C)</h3>
+                        <p>A supportive process empowering young people to develop self-awareness, positive self-image, and navigate life's challenges.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Emotional & mental well-being</li>
+                            <li><i class="fas fa-check-circle"></i> Self-esteem building</li>
+                            <li><i class="fas fa-check-circle"></i> Personal development</li>
+                            <li><i class="fas fa-check-circle"></i> Values & morality</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Career Development (Third) -->
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-image">
+                        <img loading="lazy" src="Images/CD.JPG.jpeg" alt="Career Development">
+                        <div class="service-overlay">
+                            <span class="service-tag">Career Development</span>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Career Development (CD)</h3>
+                        <p>A well-structured programme that guides young people in making informed academic and career decisions, preparing them for transitions into senior high school, tertiary education, or vocational skills training.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Program selection aligned with career goals</li>
+                            <li><i class="fas fa-check-circle"></i> Understanding job prospects</li>
+                            <li><i class="fas fa-check-circle"></i> Practical skills for employment</li>
+                            <li><i class="fas fa-check-circle"></i> Business creation opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Team Section -->
+    <section class="resource-team" id="resource-team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expert Support on Demand</span>
+                <h2 class="section-title">Our Resource Team</h2>
+                <p class="section-subtitle">
+                    Specialists available to provide targeted expertise as the organization requires
+                </p>
+            </div>
+
+            <div class="resource-grid">
+                <!-- Member 1 -->
+                <div class="resource-member">
+                    <div class="resource-avatar">
+                        <img src="Images/fauzia.jpeg" alt="Mrs. Fauzia Afriyie Akoto">
+                    </div>
+                    <div class="resource-info">
+                        <h4 class="resource-name">Mrs. Fauzia Afriyie Akoto</h4>
+                        <span class="resource-title">Counselor</span>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="resource-member">
+                    <div class="resource-avatar">
+                        <img src="Images/Mr. Abdul.JPG.jpeg" alt="Abdul-Fatawu Salifu">
+                    </div>
+                    <div class="resource-info">
+                        <h4 class="resource-name">Abdul-Fatawu Salifu</h4>
+                        <span class="resource-title">Alternate Board Memeber, Unitaid Communities Delegation</span>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="resource-member">
+                    <div class="resource-avatar">
+                        <img src="Images/Mr harrison.jpeg" alt="Mr Harrison">
+                    </div>
+                    <div class="resource-info">
+                        <h4 class="resource-name">Mr Harrison</h4>
+                        <span class="resource-title">Chartered Accountant</span>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="resource-member">
+                    <div class="resource-avatar">
+                        <img src="Images/Mr. Abib Duut .JPG.jpeg" alt="Mr Abib Duut">
+                    </div>
+                    <div class="resource-info">
+                        <h4 class="resource-name">Mr Abib Duut</h4>
+                        <span class="resource-title">Software Engineer (AI/ML)</span>
+                    </div>
+                </div>
+
+                <!-- Member 5 -->
+                <div class="resource-member">
+                    <div class="resource-avatar">
+                        <img src="Images/IMG_4183.JPG(1).jpeg" alt="Dr. Priscilla Commey-Mintah">
+                    </div>
+                    <div class="resource-info">
+                        <h4 class="resource-name">Dr. Priscilla Commey-Mintah</h4>
+                        <span class="resource-title">Educational Psychologist</span>
+                    </div>
+                </div>
+
+                <!-- Member 6 -->
+                <div class="resource-member">
+                    <div class="resource-avatar">
+                        <img src="Images/Website  III.JPG.jpeg" alt="David Anagli">
+                    </div>
+                    <div class="resource-info">
+                        <h4 class="resource-name">David Anagli</h4>
+                        <span class="resource-title">Structural Engineer</span>
+                    </div>
+                </div>
+
+                <!-- Member 7 -->
+                <div class="resource-member">
+                    <div class="resource-avatar">
+                        <img src="Images/mr kuffour.jpeg" alt="Mr. Kufuor Afriyie Akoto">
+                    </div>
+                    <div class="resource-info">
+                        <h4 class="resource-name">Mr. Kufuor Afriyie Akoto</h4>
+                        <span class="resource-title">Foreign Service Officer</span>
+                    </div>
+                </div>
+
+                <!-- Member 8 -->
+                <div class="resource-member">
+                    <div class="resource-avatar">
+                        <img src="Images/mr norbet.jpeg" alt="Norbert Dampaak Satun">
+                    </div>
+                    <div class="resource-info">
+                        <h4 class="resource-name">Norbert Dampaak Satun</h4>
+                        <span class="resource-title">Research Assistant (USTED)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="team-background"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Team</span>
+                <h2 class="section-title">Meet the Core Staff</h2>
+                <p class="section-subtitle">
+                    Dedicated professionals committed to your growth and well-being
+                </p>
+            </div>
+
+            <div class="team-capsules">
+                <!-- Member 1 -->
+                <div class="team-capsule" data-aos="fade-up">
+                    <div class="capsule-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=600&fit=crop" alt="Helina Amaning" class="capsule-image">
+                    </div>
+                    <div class="capsule-info">
+                        <h4 class="capsule-name">Helina Amaning</h4>
+                        <span class="capsule-role">Administrator</span>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-capsule" data-aos="fade-up" data-aos-delay="100">
+                    <div class="capsule-image-wrapper">
+                        <img src="Images/Eric's pictture.jpeg" alt="Eric Tamakloe" class="capsule-image">
+                    </div>
+                    <div class="capsule-info">
+                        <h4 class="capsule-name">Eric Tamakloe</h4>
+                        <span class="capsule-role">Social Media Strategist</span>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team-capsule" data-aos="fade-up" data-aos-delay="200">
+                    <div class="capsule-image-wrapper">
+                        <img src="Images/Core Staff.JPG(1).jpeg" alt="Kaba Sunday Wetonga" class="capsule-image">
+                    </div>
+                    <div class="capsule-info">
+                        <h4 class="capsule-name">Kaba Sunday Wetonga</h4>
+                        <span class="capsule-role">Financial Analyst</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">Start Your Journey Today</h2>
+                    <p>Ready to take the first step? Contact the YOUTALK Centre to book your session or learn more about our services.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>contact@youtalk.org</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+233 24 123 4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>Accra, Ghana</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Book a Session</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="cd">Career Development</option>
+                                <option value="gc">Guidance & Counselling</option>
+                                <option value="teen">Teen Talk</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about yourself or your concerns..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Submit Request
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Your Journey with YOUTALK</h2>
+                <p class="section-subtitle">
+                    Simple steps to connect with professionals who care
+                </p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-item" data-aos="fade-right">
+                    <div class="process-number">1</div>
+                    <div class="process-content">
+                        <h3>Contact Us</h3>
+                        <p>Contact us through any of our phone numbers</p>
+                    </div>
+                </div>
+
+                <div class="process-item" data-aos="fade-left">
+                    <div class="process-number">2</div>
+                    <div class="process-content">
+                        <h3>Book a Session</h3>
+                        <p>Choose your preferred service and schedule a convenient time</p>
+                    </div>
+                </div>
+
+                <div class="process-item" data-aos="fade-right">
+                    <div class="process-number">3</div>
+                    <div class="process-content">
+                        <h3>Complete Registration</h3>
+                        <p>Fill out the registration form with your details</p>
+                    </div>
+                </div>
+
+                <div class="process-item" data-aos="fade-left">
+                    <div class="process-number">4</div>
+                    <div class="process-content">
+                        <h3>Select Date & Time</h3>
+                        <p>Pick a slot that works best for you</p>
+                    </div>
+                </div>
+
+                <div class="process-item" data-aos="fade-right">
+                    <div class="process-number">5</div>
+                    <div class="process-content">
+                        <h3>Connect & Begin</h3>
+                        <p>Get matched with your assigned professional and start your session</p>
+                    </div>
+                </div>
+
+                <div class="process-item" data-aos="fade-left">
+                    <div class="process-number">6</div>
+                    <div class="process-content">
+                        <h3>Follow-Ups</h3>
+                        <p>Continue receiving support and guidance as needed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">YO<span class="highlight">U</span>TALK</a>
+                    <p class="footer-description">
+                        Creating a reliable and safe space for ALL young people to openly ask, discuss concerns, explore career development, and access guidance.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                        <a href="#process">How It Works</a>
+                        <a href="#team">Our Team</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#services">Career Development</a>
+                        <a href="#services">Guidance & Counselling</a>
+                        <a href="#services">Teen Talk</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Core Values</h4>
+                        <span class="value-tag">Confidentiality</span>
+                        <span class="value-tag">Inclusion</span>
+                        <span class="value-tag">Accountability</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 YOUTALK. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- Floating Section Indicator -->
+    <nav class="scroll-indicator" id="scroll-indicator">
+        <div class="indicator-dot active" data-section="Home" data-target="#home"></div>
+        <div class="indicator-dot" data-section="About" data-target="#about"></div>
+        <div class="indicator-dot" data-section="Services" data-target="#services"></div>
+        <div class="indicator-dot" data-section="Team" data-target="#team"></div>
+        <div class="indicator-dot" data-section="Contact" data-target="#contact"></div>
+        <div class="indicator-dot" data-section="Process" data-target="#process"></div>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>
