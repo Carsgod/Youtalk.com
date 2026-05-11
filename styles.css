@@ -379,7 +379,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1920&h=1080&fit=crop');
+    background-image: url('Images/hero\ image.jpeg');
     background-size: cover;
     background-position: center;
     z-index: -2;
@@ -808,6 +808,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 30%;
     transition: transform var(--transition-slow);
 }
 
@@ -1215,7 +1216,7 @@ section {
     .capsule-image-wrapper:nth-child(1) { height: 280px !important; }
     .capsule-image-wrapper:nth-child(2) { height: 320px !important; }
     .capsule-image-wrapper:nth-child(3) { height: 300px !important; }
-}
+
 
 @media (max-width: 480px) {
     .capsule-image-wrapper {
@@ -1266,12 +1267,18 @@ section {
     overflow: hidden;
     border: 3px solid var(--orange);
     margin-bottom: var(--space-md);
+    background: var(--gray-200);
+}
+
+[data-theme="dark"] .resource-avatar {
+    background: var(--gray-800);
 }
 
 .resource-avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 30%;
 }
 
 /* Name and title styling */

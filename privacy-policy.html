@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - YOUTALK</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23800020'/%3E%3Ctext x='50' y='72' font-family='Arial, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#800020">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Legal Pages Specific Styles */
+        .legal-page {
+            padding: 120px 0 80px;
+            min-height: 100vh;
+            background: var(--off-white);
+        }
+
+        [data-theme="dark"] .legal-page {
+            background: var(--gray-100);
+        }
+
+        .legal-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        .legal-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+
+        .legal-header h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            color: var(--burgundy);
+            margin-bottom: var(--space-sm);
+        }
+
+        [data-theme="dark"] .legal-header h1 {
+            color: var(--white);
+        }
+
+        .legal-header p {
+            color: var(--gray-600);
+            font-size: 1.1rem;
+        }
+
+        [data-theme="dark"] .legal-header p {
+            color: var(--gray-600);
+        }
+
+        .legal-last-updated {
+            display: inline-block;
+            background: var(--orange);
+            color: white;
+            padding: var(--space-xs) var(--space-md);
+            border-radius: var(--radius-xl);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: var(--space-md);
+        }
+
+        .legal-content {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-md);
+            line-height: 1.8;
+        }
+
+        [data-theme="dark"] .legal-content {
+            background: var(--gray-100);
+        }
+
+        .legal-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            color: var(--burgundy);
+            margin-top: var(--space-2xl);
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-sm);
+            border-bottom: 2px solid var(--orange);
+        }
+
+        [data-theme="dark"] .legal-content h2 {
+            color: var(--orange);
+        }
+
+        .legal-content h3 {
+            font-size: 1.25rem;
+            color: var(--burgundy);
+            margin-top: var(--space-xl);
+            margin-bottom: var(--space-md);
+        }
+
+        [data-theme="dark"] .legal-content h3 {
+            color: var(--white);
+        }
+
+        .legal-content p {
+            color: var(--gray-700);
+            margin-bottom: var(--space-md);
+        }
+
+        [data-theme="dark"] .legal-content p {
+            color: var(--gray-600);
+        }
+
+        .legal-content ul {
+            margin: var(--space-md) 0;
+            padding-left: var(--space-xl);
+        }
+
+        .legal-content ul li {
+            list-style-type: disc;
+            margin-bottom: var(--space-sm);
+            color: var(--gray-700);
+        }
+
+        [data-theme="dark"] .legal-content ul li {
+            color: var(--gray-600);
+        }
+
+        .legal-content a {
+            color: var(--orange);
+            text-decoration: underline;
+        }
+
+        .legal-content a:hover {
+            color: var(--burgundy);
+        }
+
+        .legal-footer {
+            text-align: center;
+            margin-top: var(--space-3xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--gray-200);
+        }
+
+        [data-theme="dark"] .legal-footer {
+            border-color: var(--gray-300);
+        }
+
+        .legal-footer .btn {
+            margin: var(--space-sm);
+        }
+
+        /* Back button */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            color: var(--burgundy);
+            font-weight: 600;
+            text-decoration: none;
+            margin-bottom: var(--space-xl);
+            transition: all var(--transition-fast);
+        }
+
+        [data-theme="dark"] .back-link {
+            color: var(--orange);
+        }
+
+        .back-link:hover {
+            color: var(--orange);
+            transform: translateX(-5px);
+        }
+
+        [data-theme="dark"] .back-link:hover {
+            color: var(--white);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .legal-content {
+                padding: var(--space-xl);
+            }
+
+            .legal-header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .legal-content {
+                padding: var(--space-lg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">YO<span class="highlight">U</span>TALK</span>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#process" class="nav-link">Process</a>
+                <a href="index.html#team" class="nav-link">Team</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="index.html#contact" class="nav-cta">Book a Session</a>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Legal Page Content -->
+    <section class="legal-page">
+        <div class="legal-container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+
+            <div class="legal-header">
+                <h1>Privacy Policy</h1>
+                <p>Your privacy is important to us. This policy explains how we collect, use, and protect your information.</p>
+                <span class="legal-last-updated">Last Updated: May 2025</span>
+            </div>
+
+            <div class="legal-content">
+                <h2>1. Introduction</h2>
+                <p>Welcome to YOUTALK. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+                <p>Please read this Privacy Policy carefully. By using our website or services, you consent to the practices described in this policy.</p>
+
+                <h2>2. Information We Collect</h2>
+                <h3>Personal Information</h3>
+                <p>We may collect personally identifiable information that can be used to contact or identify you, including but not limited to:</p>
+                <ul>
+                    <li>Name</li>
+                    <li>Email address</li>
+                    <li>Phone number</li>
+                    <li>Age (if provided)</li>
+                    <li>Messages and inquiries</li>
+                </ul>
+
+                <h3>Non-Personal Information</h3>
+                <p>We may also collect non-personal information about how you access our website, including:</p>
+                <ul>
+                    <li>Browser type and version</li>
+                    <li>Operating system</li>
+                    <li>Pages visited and time spent</li>
+                    <li>IP address</li>
+                </ul>
+
+                <h2>3. How We Use Your Information</h2>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Provide, maintain, and improve our services</li>
+                    <li>Respond to your inquiries and requests</li>
+                    <li>Schedule and manage your sessions</li>
+                    <li>Send important updates and notifications</li>
+                    <li>Analyze website usage to enhance user experience</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+
+                <h2>4. Information Sharing and Disclosure</h2>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
+                <ul>
+                    <li>With your explicit consent</li>
+                    <li>With our staff and counselors who need access to provide services</li>
+                    <li>To comply with legal requirements or protect our rights</li>
+                    <li>With service providers who assist our operations (subject to confidentiality agreements)</li>
+                </ul>
+
+                <h2>5. Data Security</h2>
+                <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+                <h2>6. Data Retention</h2>
+                <p>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy, or as required by law. When we no longer need your information, we will securely delete or anonymize it.</p>
+
+                <h2>7. Your Rights</h2>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access the personal information we hold about you</li>
+                    <li>Request correction of inaccurate or incomplete information</li>
+                    <li>Request deletion of your personal information</li>
+                    <li>Object to or restrict certain processing activities</li>
+                    <li>Data portability</li>
+                    <li>Withdraw consent at any time</li>
+                </ul>
+                <p>To exercise any of these rights, please contact us at privacy@youtalk.org.</p>
+
+                <h2>8. Cookies and Tracking</h2>
+                <p>We use cookies and similar tracking technologies to improve your experience on our website. You can control cookie preferences through your browser settings. Disabling cookies may affect certain website functionalities.</p>
+
+                <h2>9. Children's Privacy</h2>
+                <p>Our services are designed for young people, but we do not knowingly collect personal information from children under 13 without verifiable parental consent. If we learn we have collected such information, we will delete it promptly.</p>
+
+                <h2>10. Confidentiality</h2>
+                <p>All counseling and guidance sessions are strictly confidential. Information shared during sessions is not disclosed without your explicit consent, except where required by law (e.g., risk of harm to self or others, abuse reporting).</p>
+
+                <h2>11. Third-Party Links</h2>
+                <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites. We encourage you to review their privacy policies before providing any information.</p>
+
+                <h2>12. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. The "Last Updated" date at the top indicates when the policy was last revised. Continued use of our services after changes constitutes acceptance of the updated policy.</p>
+
+                <h2>13. Contact Us</h2>
+                <p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+                <ul>
+                    <li>Email: privacy@youtalk.org</li>
+                    <li>Phone: +233 24 123 4567</li>
+                    <li>Address: Accra, Ghana</li>
+                </ul>
+            </div>
+
+            <div class="legal-footer">
+                <p>Need to review our terms? <a href="terms-of-service.html">View Terms of Service</a></p>
+                <div style="margin-top: var(--space-md);">
+                    <a href="index.html" class="btn btn-outline">Return to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">YO<span class="highlight">U</span>TALK</a>
+                    <p class="footer-description">
+                        Creating a reliable and safe space for ALL young people to openly ask, discuss concerns, explore career development, and access guidance.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="index.html#about">About Us</a>
+                        <a href="index.html#services">Services</a>
+                        <a href="index.html#process">How It Works</a>
+                        <a href="index.html#team">Our Team</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="index.html#services">Career Development</a>
+                        <a href="index.html#services">Guidance & Counselling</a>
+                        <a href="index.html#services">Teen Talk</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Core Values</h4>
+                        <span class="value-tag">Confidentiality</span>
+                        <span class="value-tag">Inclusion</span>
+                        <span class="value-tag">Accountability</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 YOUTALK. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- Floating Section Indicator -->
+    <nav class="scroll-indicator" id="scroll-indicator">
+        <div class="indicator-dot active" data-section="Home" data-target="index.html"></div>
+        <div class="indicator-dot" data-section="About" data-target="index.html#about"></div>
+        <div class="indicator-dot" data-section="Services" data-target="index.html#services"></div>
+        <div class="indicator-dot" data-section="Team" data-target="index.html#team"></div>
+        <div class="indicator-dot" data-section="Contact" data-target="index.html#contact"></div>
+        <div class="indicator-dot" data-section="Process" data-target="index.html#process"></div>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
